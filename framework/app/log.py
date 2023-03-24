@@ -25,7 +25,7 @@ def log_init():
         '日志信息:%(message)s'
     )
     sys_log.handlers.clear()
-    file_handler = handlers.TimedRotatingFileHandler('ik_cnd_user_app_logs.log', encoding='utf-8', when='W6')
+    file_handler = handlers.TimedRotatingFileHandler('headless_cms.log', encoding='utf-8', when='W6')
     file_handler.setLevel(level=logging.INFO)
     file_handler.setFormatter(formatter)
     sys_log.addHandler(file_handler)

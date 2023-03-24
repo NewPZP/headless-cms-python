@@ -9,8 +9,8 @@
 #@Desc    : 
 #----------------------------------------------------------------------------
 from fastapi import FastAPI
-from domain.test_app.api import info
-from domain.test_app.api import testcase
+from domain.cloudtest.api import info
+from domain.cloudtest.api import testcase
 
 
 def router_init(app:FastAPI):

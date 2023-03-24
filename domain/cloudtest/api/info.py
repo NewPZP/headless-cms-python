@@ -16,4 +16,4 @@ router = APIRouter(prefix="/system")
 
 @router.get("/info")
 async def app_info():
-    return "hello word"
+    return "hello world"
