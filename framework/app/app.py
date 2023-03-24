@@ -9,9 +9,10 @@
 #@Desc    : 
 #----------------------------------------------------------------------------
 from fastapi import FastAPI
-from log import log_init
+from .log import log_init
+from .router import router_init
 
-def create_app():
+def create_app() -> FastAPI:
     app = FastAPI(title="Headless CMS",
                   description="内容管理",
                   version="1.0.0",
@@ -24,7 +25,7 @@ def create_app():
     # conf_init(app)
 
     # # 初始化路由配置
-    # router_init(app)
+    router_init(app)
 
     # # 初始化中间件
     # middleware_init(app)
@@ -32,4 +33,4 @@ def create_app():
     # # 建表
     # db_init(app)
 
-    # return app
+    return app

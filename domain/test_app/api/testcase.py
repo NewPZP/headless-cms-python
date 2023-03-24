@@ -9,3 +9,12 @@
 #@Desc    : 
 #----------------------------------------------------------------------------
 
+
+from fastapi import APIRouter
+
+router = APIRouter(prefix="/testcase")
+
+
+@router.get("/info")
+async def test_demo():
+    return "hello word"
