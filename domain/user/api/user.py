@@ -34,6 +34,6 @@ async def query_user_info(token: str):
     pass
 
 
-@router.get("/delete")
-async def delete_user(id: int, user=Depends(Permission(Config.ADMIN))):
-    pass
+# @router.get("/delete")
+# async def delete_user(id: int, user=Depends(Permission(Config.ADMIN))):
+#     pass

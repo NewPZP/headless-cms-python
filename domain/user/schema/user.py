@@ -30,3 +30,4 @@ class UserLoginForm(BaseModel):
 
     @validator('password', 'username')
     def name_not_empty(cls, v):
+        pass
